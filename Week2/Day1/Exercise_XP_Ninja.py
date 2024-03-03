@@ -88,6 +88,26 @@ my_text = ("Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusm
 print(len(my_text))
 
 #Exercise_5
+sentence_list = []
+longest_sentence=''
+while True:
+    sentence = input("Input the longest sentence you can without using the letter 'A' (type 'exit' to stop): ")
+
+    if sentence.lower() == 'exit':
+        print("Exiting the loop.")
+        break
+
+    if 'a' not in sentence.lower():
+        sentence_list.append(sentence)
+        if len(sentence) > len(longest_sentence):
+            longest_sentence = sentence
+    else:
+        print("The sentence contains the letter 'A'.")
+        break
+
+print("Sentences without the letter 'A':")
+print(sentence_list)
+print(f"your longest sentence is: {longest_sentence} with a length of:  {len(longest_sentence)}")
 
 
 
