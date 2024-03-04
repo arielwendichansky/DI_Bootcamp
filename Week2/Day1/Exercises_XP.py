@@ -67,8 +67,8 @@ print(('Hello world'+ '\n' )*5)
 
 print('>'*30)
 #Exercise_2
-ac= (99^3)*8
-print(ac)
+result= (99^3)*8
+print(result)
 
 print('>'*30)
 #Exercise_3
@@ -124,7 +124,7 @@ print('>' * 30)
 # Exercise_9
 
 height = float(input('Whats your height in cm? '))
-if height > 1.65:
+if height > 1.45:
     print('Congrats youre tall enough to ride!!')
 else:
     print('Im sorry you need to grow some more to ride')
