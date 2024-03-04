@@ -41,9 +41,9 @@ print('>' * 30)
 # Exercise_3
 
 b = 'Hello World'
-c=''
+c = ''
 for i in b:
-    c+=i
+    c += i
     print(c)
 
 print('>' * 30)
@@ -51,9 +51,9 @@ print('>' * 30)
 
 import random
 
-d = list (b)
-random.shuffle(d)
-e=''.join(d)
-print(e)
+letter_list = list (b)
+random.shuffle(letter_list)
+letter_final=''.join(letter_list)
+print(letter_final)
 
 
