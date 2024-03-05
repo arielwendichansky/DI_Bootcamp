@@ -1,5 +1,5 @@
 #Exercise_1
-"""
+
 keys = ['Ten', 'Twenty', 'Thirty']
 values = [10, 20, 30]
 dic = dict(zip(keys,values))
@@ -102,7 +102,7 @@ print(brand)
 
 print(">"*30)
 #Exercise_4
-"""
+
 users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
 for item in enumerate(users):
     print(item)
