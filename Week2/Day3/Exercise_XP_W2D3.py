@@ -102,11 +102,12 @@ time_difference()
 
 def birthday_input(birthday):
     time_lived = datetime.now()-birthday
-    print(f"You have lived {time_lived} hours so far")
+    minutes_lives = time_lived.total_seconds()/60
+    print(f"You have lived {minutes_lives} minutes so far")
 
-# date_str = input("When is you where born (yyyy-mm-dd)?")
-# birthday_date = datetime.strptime(date_str, "%Y-%m-%d")
-# birthday_input(birthday_date)
+date_str = input("When is you where born (yyyy-mm-dd)?")
+birthday_date = datetime.strptime(date_str, "%Y-%m-%d")
+birthday_input(birthday_date)
 
 # Exercise 7
 from faker import Faker
