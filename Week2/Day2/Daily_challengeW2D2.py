@@ -41,16 +41,20 @@ class Pagination:
         print(self.currentpage)
 
     def gotopage(self, pagenum):
-        if 1 <= pagenum <= self.totalpages:
-            self.currentpage = pagenum
-            self.update_visible_items()
-            print(self.currentpage)
+        if pagenum <= 0:
+            self.currentpage = 1
+        elif pagenum > self.totalpages:
+            self.currentpage = self.totalpages
         else:
-            print("Invalid page number. Please choose a valid page.")
+            self.currentpage = pagenum
+
+        self.update_visible_items()
+        print(self.currentpage)
 
 alphabetList = list("abcdefghijklmnopqrstuvwxyz")
 p = Pagination(alphabetList, 4)
 
 p.gotopage(10)
+p.getvisibleitems()
 p.gotopage(1)
 p.getvisibleitems()
