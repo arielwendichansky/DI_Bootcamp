@@ -1,5 +1,5 @@
 from pyowm.owm import OWM
-owm = OWM('a2fcad8620f27ba7f2093802b85d2f6d')
+owm = OWM('APIKEY')
 mgr = owm.weather_manager()
 observation = mgr.weather_at_place('Jerusalem,IL')
 
