@@ -1,0 +1,65 @@
+CREATE TABLE FirstTab (
+     id integer,
+     name VARCHAR(10)
+)
+
+INSERT INTO FirstTab VALUES
+(5,'Pawan'),
+(6,'Sharlee'),
+(7,'Krish'),
+(NULL,'Avtaar')
+
+SELECT * FROM FirstTab
+
+CREATE TABLE SecondTab (
+    id integer
+)
+
+INSERT INTO SecondTab VALUES
+(5),
+(NULL)
+
+
+SELECT * FROM SecondTab
+
+Table1 – FirstTab
+ID  Name
+5   Pawan
+6   Sharlee
+7   Krish
+NULL    Avtaar
+
+Table2 – SecondTab
+ID
+5
+NULL
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+What will be the OUTPUT of the following statement?
+
+    SELECT COUNT(*)
+    FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id IS NULL )
+THE RESULT = 0
+As the subquery result is NULL, always that I have to compare NULL to a value it will not count the row
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+What will be the OUTPUT of the following statement?
+
+    SELECT COUNT(*)
+    FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id = 5 )
+ THE RESULT = 2
+ Following previous question we have 2 rows with values and 1 with null, we can not consider the one with 5
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ SELECT COUNT(*)
+    FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab )
+ THE RESULT = 0
+
+ Same as the first one.
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ SELECT COUNT(*)
+    FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id IS NOT NULL )
+  THE RESULT = 2
+  Second as the second one.
