@@ -1,0 +1,57 @@
+#Exercise 1
+A company’s financial reports stored in an Excel file. -> Structured
+Photographs uploaded to a social media platform. -> Unstructured 
+A collection of news articles on a website. -> Unstructured
+Inventory data in a relational database. -> Structured
+Recorded interviews from a market research study. -> Unstructured
+
+#Exercise 2
+- A series of blog posts about travel experiences.-> It should be devided by Country, city and day. We can separete between different experiences like attraction, food and tours.
+- Audio recordings of customer service calls. ->  We can organize it by date, toppic, positive or negative, customer name.
+- Handwritten notes from a brainstorming session. -> Date, topic or project, relevant or not relevant, have everything digital is a must.
+- A video tutorial on cooking. -> Divide them by type of cuisine, dish, ingridientes, difficulty, time requirement.
+
+#Exercise 3
+Transaction records -> Structured. 
+The info will be used to follow and measure the income and outcome from the company
+Also, it can help understand which are the product that are saled the most, peak sales and seasonal variations.
+Monitor inventory levels and optimize stock replenishment to avoid stockouts or overstocking.
+
+Customer feedback comments -> Unstructured 
+Measure the customer satisfaction levels and identify areas for improvement.
+Identify common issues or pain points mentioned by customers.
+Incorporate feedback into product development processes to enhance offerings and meet customer expectations.
+
+Social media posts about your brand -> Unstructured 
+Monitor brand sentiment and track online conversations to understand public perception.
+Engage with customers directly by responding to inquiries, comments, and complaints in real-time.
+Identify influencers who can amplify positive messaging and promote products.
+Analyze engagement metrics to assess the effectiveness of social media marketing campaigns.
+
+Employee work schedules -> Structured
+Optimize staffing levels by analyzing historical data to match workforce availability with customers demand.
+Forecast labor costs and allocate resources efficiently to minimize understaffing or overstaffing.
+Automate scheduling processes to ensure compliance with labor regulations and minimize scheduling conflicts.
+Track employee attendance and performance metrics to identify opportunities for training or performance improvement.
+
+#Exercise 6
+To generate the dataset, I'll start by strategically measuring vehicle traffic at key points across the city. 
+This includes highways, urban streets, residential areas, and commercial districts. 
+By collecting data on vehicle count, time of day, and seasonality, I aim to understand how traffic patterns vary throughout the year. 
+For instance, I'll investigate whether there are more cars during winter compared to summer, and how weather conditions impact traffic flow.
+
+Furthermore, it's crucial to consider not only the number of vehicles but also occupancy levels. 
+I'll gather information on how many people are inside different types of vehicles and whether individuals are using public transportation or alternative modes of commuting. 
+This holistic approach will provide insights into overall mobility and transportation choices within the city.
+
+To ensure comprehensive coverage, I'll deploy a combination of data collection methods. 
+This includes cameras and AI recognition systems distributed throughout the city, as well as GPS trackers on vehicles or mobile apps for real-time tracking. 
+By leveraging these technologies, I can capture detailed information on vehicle movement, average travel times, and congestion hotspots.
+
+The simulated dataset will be integrated with existing traffic management systems and urban planning initiatives. 
+This integration will enable us to optimize traffic signal timings, prioritize infrastructure upgrades, and enhance safety measures for pedestrians and cyclists. 
+By identifying areas for improvement and implementing data-driven strategies, we can alleviate traffic congestion and enhance overall mobility in the city.
+
+In summary, this approach holds significant potential for mitigating traffic jams and improving public and personal transportation options. 
+By leveraging advanced data analytics and simulation techniques, we can drive meaningful improvements in urban mobility and enhance the quality of life for residents.
+
