@@ -15,7 +15,7 @@ print(f"There are {len(not_i_cars)} brands where the letter 'i' is not in it's n
 
 
 list_cars.sort()
-reversed_cars = [car.strip()[::-1] for car in list_cars]
+reversed_cars = [car.strip()[::-1] for car in list_cars]  # Strip whitespace from each brand and reverse letters
 for car in reversed_cars:
     print(car)
 
