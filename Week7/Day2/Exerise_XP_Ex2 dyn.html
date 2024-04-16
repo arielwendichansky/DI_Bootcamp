@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static HTML</title>
+</head>
+<body>
+    <h1 id="header">Game Of Thrones</h1>
+        <h2>Families</h2>
+
+    <button id="clickButton">Families List</button>
+    <div id="listContainer" style="display:none;">
+        <ol>
+            <li>Stark</li>
+            <li>Lannister</li>
+            <li>Targaryen</li>
+            <li>Baratheon</li>
+            <li>Greyjoy</li>
+            <li>Martell</li>
+            <li>Tyrell</li>
+            <li>Arryn</li>
+            <li>Tully</li>
+            <li>Bolton</li>
+            <li>Frey</li>
+            <li>Mormont</li>
+            <li>Tarly</li>
+            <li>Clegane</li>
+            <li>Umber</li>
+        </ol>
+    </div>
+    <script>
+        // Accessing the breakdown bottom and display families
+        document.getElementById('clickButton').addEventListener('click', function() {
+            var listContainer = document.getElementById("listContainer");
+             if (listContainer.style.display === 'none') {
+              listContainer.style.display = 'block';
+            } else {
+              listContainer.style.display = 'none';
+            }
+      });
+    </script>
+</body>
+</html>
